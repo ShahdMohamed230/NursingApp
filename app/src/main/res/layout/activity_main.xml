@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/ed_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        app:layout_constraintEnd_toEndOf="@+id/tv1"
+        app:layout_constraintStart_toStartOf="@+id/tv1"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="177dp"
+        android:text="Welcome"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ed_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Age"
+        app:layout_constraintEnd_toEndOf="@+id/ed_name"
+        app:layout_constraintStart_toStartOf="@+id/ed_name"
+        app:layout_constraintTop_toBottomOf="@+id/ed_name" />
+
+    <EditText
+        android:id="@+id/ed_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Gender"
+        app:layout_constraintEnd_toEndOf="@+id/ed_age"
+        app:layout_constraintStart_toStartOf="@+id/ed_age"
+        app:layout_constraintTop_toBottomOf="@+id/ed_age" />
+
+    <EditText
+        android:id="@+id/ed_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Number"
+        app:layout_constraintEnd_toEndOf="@+id/ed_gender"
+        app:layout_constraintStart_toStartOf="@+id/ed_gender"
+        app:layout_constraintTop_toBottomOf="@+id/ed_gender" />
+
+    <EditText
+        android:id="@+id/ed_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Location"
+        app:layout_constraintEnd_toEndOf="@+id/ed_number"
+        app:layout_constraintStart_toStartOf="@+id/ed_number"
+        app:layout_constraintTop_toBottomOf="@+id/ed_number" />
+
+    <CheckBox
+        android:id="@+id/checkBox_customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="customer"
+        app:layout_constraintStart_toStartOf="@+id/ed_location"
+        app:layout_constraintTop_toBottomOf="@+id/ed_location" />
+
+    <CheckBox
+        android:id="@+id/checkBox_nurse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Nurse"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_customer"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_customer" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="@+id/ed_location"
+        app:layout_constraintStart_toStartOf="@+id/ed_location"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_nurse" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
